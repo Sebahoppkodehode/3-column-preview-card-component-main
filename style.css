@@ -1,0 +1,147 @@
+:root {
+  --mainbg: hsl(0, 0%, 95%);
+  --card1: hsl(31, 77%, 52%);
+  --card2: hsl(184, 100%, 22%);
+  --card3: hsl(179, 100%, 13%);
+  --mainp: hsla(0, 0%, 100%, 0.75);
+  --mainh: hsl(0, 0%, 95%);
+  --mainbtn: hsl(0, 0%, 95%);
+  --font2: "Lexend Deca", sans-serif;
+  --font1: "Big Shoulders Display", cursive;
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  margin: 20px 10px 100px 400px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background-color: var(--mainbg);
+  width: 70%;
+  height: 100%;
+  font-family: var(--font1);
+  color: rgb(5, 5, 5);
+}
+
+.main {
+  width: 1200px;
+  height: 600px;
+  position: absolute;
+  left: 170px;
+  top: 100px;
+  bottom: 100px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.container {
+  width: 900px;
+  height: 500px;
+  position: relative;
+  left: 170px;
+  top: 100px;
+  bottom: 200px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card1);
+  height: 450px;
+  width: 700px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  margin: 0 auto 0 auto;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card2);
+  height: 450px;
+  width: 700px;
+}
+
+.card3 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card3);
+  height: 450px;
+  width: 700px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon {
+  height: 32px;
+  width: 32px;
+  margin: 40px 40px 20px 40px;
+}
+
+.title {
+  color: var(--mainh);
+  font-family: var(--font1);
+  margin: 0px 40px 20px 40px;
+}
+.text {
+  color: var(--mainp);
+  font-family: var(--font2);
+  margin: 0px 40px 20px 40px;
+  text-align: left;
+  line-height: 180%;
+}
+.btn1 {
+  margin: 60px 40px 10px 40px;
+  background-color: var(--mainbtn);
+  color: var(--card1);
+  font-family: var(--font2);
+  height: 40px;
+  width: 110px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.btn2 {
+  margin: 60px 40px 10px 40px;
+  background-color: var(--mainbtn);
+  color: var(--card2);
+  font-family: var(--font2);
+  height: 40px;
+  width: 110px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.btn3 {
+  margin: 60px 40px 10px 40px;
+  background-color: var(--mainbtn);
+  color: var(--card3);
+  font-family: var(--font2);
+  height: 40px;
+  width: 110px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.4s;
+}
